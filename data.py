@@ -1,3 +1,4 @@
+
 class URL:
     BASE_URL = 'https://qa-scooter.praktikum-services.ru'
     CREATE_COURIER_URL = BASE_URL+'/api/v1/courier'
@@ -5,11 +6,6 @@ class URL:
     CREATE_ORDER_URL = BASE_URL + '/api/v1/orders'
     LIST_ORDER_URL = BASE_URL + '/api/v1/orders/track'
     COUNTERMAND_ORDER_URL = BASE_URL + '/api/v1/orders/cancel'
-
-
-
-class Data:
-    login_invalid = "ninja"
 
 
 class DataForCreateOrder:

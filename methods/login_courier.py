@@ -1,10 +1,8 @@
 import requests
-import allure
 from data import URL
 
 class LoginCourier:
 
-    @allure.step('Регистрация нового курьера')
     @staticmethod
     def register_new_courier_and_return_login_password(body):
         body = body
@@ -23,7 +21,6 @@ class LoginCourier:
         # возвращаем список
         return login_pass
 
-    @allure.step('Авторизация курьера')
     @staticmethod
     def login_courier(login, password):
         payload = {
